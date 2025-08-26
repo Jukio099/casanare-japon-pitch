@@ -74,4 +74,3 @@ Para más información sobre inversiones en Casanare:
 
 ---
 *Desarrollado para la Gobernación de Casanare - 2025*
-

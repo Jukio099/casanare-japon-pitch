@@ -32,4 +32,3 @@
 ---
 
 *¡En menos de 2 minutos tendrás tu pitch online! 🎯*
-

@@ -37,4 +37,3 @@ git push -u origin main
 ---
 
 *¡Tu pitch estará online en 2 minutos! 🚀*
-

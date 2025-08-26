@@ -98,4 +98,3 @@ git remote add origin https://github.com/TU-USUARIO/casanare-japon-pitch.git
 ---
 
 *¡En 5 minutos tendrás tu proyecto en GitHub y desplegado en Netlify! 🚀*
-
