@@ -1,0 +1,308 @@
+/* ===== ESTILOS PRINCIPALES - PITCH CASANARE & JAPÓN ===== */
+
+/* Configuración Base */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Contenedor de Gráficos */
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-height: 400px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 350px;
+    }
+}
+
+/* Sección Hero con Bandera de Casanare */
+.hero-section {
+    background: linear-gradient(135deg, #003366 0%, #004080 50%, #003366 100%);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Efectos de sombra para el texto */
+.hero-section h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Animaciones para los botones */
+.hero-section button {
+    transition: all 0.3s ease;
+}
+
+.hero-section button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Indicador de scroll animado */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-5px) translateX(-50%);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Cajas de Iconos */
+.icon-box {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: scale(1.1);
+}
+
+/* Animaciones de Entrada */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botones de Idioma */
+.lang-btn {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.lang-btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.lang-btn.active {
+    opacity: 1;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px rgba(0, 51, 102, 0.5);
+    border-color: #003366;
+}
+
+/* Colores Oficiales */
+:root {
+    --colombia-red: #DA291C;
+    --colombia-yellow: #FFD700;
+    --colombia-green: #009444;
+    --colombia-blue: #003366;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+}
+
+/* Estilos de Tarjetas */
+.card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de Botones */
+.btn-primary {
+    background: var(--colombia-blue);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #002855;
+    transform: translateY(-2px);
+}
+
+/* Estilos de Navegación */
+.nav-link {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--colombia-blue);
+}
+
+/* Estilos de Secciones */
+.section-title {
+    color: var(--colombia-blue);
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-subtitle {
+    color: var(--text-light);
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+/* Estilos de KPIs */
+.kpi-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid var(--colombia-blue);
+}
+
+.kpi-number {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--colombia-blue);
+    line-height: 1;
+}
+
+/* Estilos de Inventario Industrial */
+.inventory-item {
+    background: var(--bg-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.inventory-item:hover {
+    background: var(--white);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de Proyectos del Gobernador */
+.project-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de Footer */
+.footer {
+    background: var(--colombia-green);
+    color: var(--white);
+    padding: 3rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .kpi-number {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section {
+        padding: 4rem 0;
+    }
+    
+    .hero-section h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Animaciones Adicionales */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Estilos para el Modo Presentación */
+.presentation-mode {
+    background: #000;
+}
+
+.presentation-mode .container {
+    max-width: 1200px;
+}
+
+/* Estilos de Accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Estilos de Impresión */
+@media print {
+    .hero-section {
+        background: none !important;
+        color: #000 !important;
+    }
+    
+    .fade-in-section {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+

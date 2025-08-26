@@ -1,0 +1,17 @@
+{
+    "name": "Casanare & Japón - Alianza Estratégica",
+    "short_name": "Casanare-Japón",
+    "description": "Pitch de inversión para convencer a inversores japoneses sobre las oportunidades en Casanare, Colombia",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f8fafc",
+    "theme_color": "#003366",
+    "icons": [
+        {
+            "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiBmaWxsPSIjMDAzMzY2Ii8+CjxwYXRoIGQ9Ik0wIDY0aDE5MlYxMjhIMFY2NFoiIGZpbGw9IiNGRkQ3MDAiLz4KPHBhdGggZD0iTTAgMTI4aDE5MlYxOTJIMFYxMjhaIiBmaWxsPSIjMDA5NDQ0Ii8+Cjwvc3ZnPgo=",
+            "sizes": "192x192",
+            "type": "image/svg+xml"
+        }
+    ]
+}
+
