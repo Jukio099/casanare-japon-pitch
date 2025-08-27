@@ -144,16 +144,9 @@
             <section id="strategic-sectors" class="mb-16 fade-in-section">
                 <div class="bg-white rounded-lg shadow-lg p-8">
                     <h3 class="text-4xl font-bold text-[#003366] mb-6 text-center" data-translate-key="strategicSectorsTitle">Sectores Estratégicos Priorizados</h3>
-                    <p class="text-xl text-gray-700 mb-8 text-center max-w-4xl mx-auto" data-translate-key="strategicSectorsDesc">
-                        Nuestra visión de desarrollo se enfoca en **cinco pilares interconectados**. La inversión en estos sectores se alinea con nuestra estrategia de crecimiento a largo plazo, garantizando **apoyo gubernamental y sinergia total**.
+                    <p class="text-xl text-gray-700 mb-8 text-center max-w-4xl mx-auto">
+                        Casanare se enfoca en tres sectores estratégicos que aprovechan sus ventajas competitivas y recursos naturales.
                     </p>
-                    
-                    <!-- Infografía de Sectores Estratégicos -->
-                    <div class="mb-12">
-                        <img src="https://storage.googleapis.com/gemini-prod-us-west1-433503453935-public/images/image_c89510.jpg" 
-                             alt="Sectores Estratégicos de Casanare" 
-                             class="rounded-lg shadow-md mx-auto max-w-6xl w-full">
-                    </div>
                     
                     <!-- Detalle de los Tres Sectores Principales -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
@@ -329,13 +322,7 @@
                         Casanare cuenta con una **base industrial diversificada y robusta**. Este inventario demuestra una capacidad existente lista para ser **expandida y tecnificada con inversión japonesa**.
                     </p>
                     
-                    <!-- Infografía del Inventario Industrial -->
-                    <div class="mb-8">
-                        <img src="https://storage.googleapis.com/gemini-prod-us-west1-433503453935-public/images/image_c89510.jpg" 
-                             alt="Inventario Industrial de Casanare" 
-                             class="rounded-lg shadow-md mx-auto max-w-6xl w-full"
-                             data-translate-key="industrialInventoryImage">
-                    </div>
+
                     
                     <!-- Grid Interactivo del Inventario -->
                     <div class="mb-8">
@@ -439,57 +426,84 @@
                     Descarga y revisa el documento completo del proyecto de inversión estratégica entre Casanare y Japón.
                 </p>
                 
-                <!-- PDF Viewer con Pantalla Completa -->
+                <!-- Controles de Presentación -->
+                <div class="flex justify-center gap-4 mb-6">
+                    <button id="fullscreen-btn" class="bg-white text-[#003366] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                        </svg>
+                        Presentación Completa
+                    </button>
+                    <button id="slideshow-btn" class="bg-[#003366] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#002855] transition-colors flex items-center gap-2 shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Modo Diapositivas
+                    </button>
+                </div>
+                
+                <!-- PDF Viewer -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <div class="bg-[#003366] text-white p-6 flex justify-between items-center">
-                        <div>
-                            <h4 class="text-2xl font-bold mb-2">Proyecto de Inversión Estratégica</h4>
-                            <p class="text-lg opacity-90">Casanare - Japón: Alianza para el Futuro</p>
-                        </div>
-                        <!-- Botón de Pantalla Completa -->
-                        <button id="fullscreen-btn" class="bg-white text-[#003366] px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center">
-                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path>
+                    <iframe src="https://drive.google.com/file/d/1IP1GpgBW4wHDwARWbrjbFtrHypLeevu_/preview" 
+                            width="100%" 
+                            height="600" 
+                            class="border-0"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <!-- Overlay de Pantalla Completa -->
+                <div id="fullscreen-overlay" class="fixed inset-0 bg-black z-50 hidden">
+                    <div class="absolute top-4 right-4 z-10">
+                        <button id="exit-fullscreen-btn" class="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
-                            Pantalla Completa
+                            Salir
                         </button>
                     </div>
-                    
-                    <!-- Contenedor del PDF -->
-                    <div id="pdf-container" class="relative">
-                        <div class="w-full h-[600px] bg-gray-100">
-                            <iframe 
-                                id="pdf-iframe"
-                                src="https://drive.google.com/file/d/1IP1GpgBW4wHDwARWbrjbFtrHypLeevu_/preview" 
-                                width="100%" 
-                                height="100%" 
-                                frameborder="0"
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        
-                        <!-- Overlay de Pantalla Completa -->
-                        <div id="fullscreen-overlay" class="fixed inset-0 bg-black z-50 hidden">
-                            <div class="absolute top-4 right-4 z-10">
-                                <button id="exit-fullscreen-btn" class="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center">
-                                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                                    </svg>
-                                    Salir (ESC)
-                                </button>
-                            </div>
-                            <div class="w-full h-full">
-                                <iframe 
-                                    id="fullscreen-iframe"
-                                    src="https://drive.google.com/file/d/1IP1GpgBW4wHDwARWbrjbFtrHypLeevu_/preview" 
-                                    width="100%" 
-                                    height="100%" 
-                                    frameborder="0"
-                                    allowfullscreen>
-                                </iframe>
-                            </div>
+                    <iframe id="fullscreen-iframe"
+                            src="https://drive.google.com/file/d/1IP1GpgBW4wHDwARWbrjbFtrHypLeevu_/preview" 
+                            class="w-full h-full border-0"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                
+                <!-- Overlay de Modo Diapositivas -->
+                <div id="slideshow-overlay" class="fixed inset-0 bg-black z-50 hidden">
+                    <div class="absolute top-4 left-4 z-10">
+                        <button id="prev-slide-btn" class="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2 mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                            </svg>
+                            Anterior
+                        </button>
+                        <button id="next-slide-btn" class="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2">
+                            Siguiente
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="absolute top-4 right-4 z-10">
+                        <button id="exit-slideshow-btn" class="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                            Salir
+                        </button>
+                    </div>
+                    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                        <div class="bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
+                            <span id="slide-counter">Diapositiva 1 de 20</span>
                         </div>
                     </div>
+                    <iframe id="slideshow-iframe"
+                            src="https://drive.google.com/file/d/1IP1GpgBW4wHDwARWbrjbFtrHypLeevu_/preview" 
+                            class="w-full h-full border-0"
+                            allowfullscreen>
+                    </iframe>
+                </div>
                     
                     <!-- Botón de Descarga -->
                     <div class="p-6 bg-gray-50 text-center">
