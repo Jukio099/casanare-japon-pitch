@@ -421,8 +421,8 @@
     <section class="bg-slate-50 py-16">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
-                <h3 class="text-4xl font-bold text-[#003366] mb-8 text-center">Documento del Proyecto</h3>
-                <p class="text-xl text-gray-700 mb-12 text-center max-w-4xl mx-auto">
+                <h3 class="text-4xl font-bold text-[#003366] mb-8 text-center" data-translate-key="projectDocumentTitle">Documento del Proyecto</h3>
+                <p class="text-xl text-gray-700 mb-12 text-center max-w-4xl mx-auto" data-translate-key="projectDocumentDesc">
                     Descarga y revisa el documento completo del proyecto de inversión estratégica entre Casanare y Japón.
                 </p>
                 
@@ -432,13 +432,13 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
                         </svg>
-                        Presentación Completa
+                        <span data-translate-key="fullscreenButton">Presentación Completa</span>
                     </button>
                     <button id="slideshow-btn" class="bg-[#003366] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#002855] transition-colors flex items-center gap-2 shadow-lg">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        Modo Diapositivas
+                        <span data-translate-key="slideshowButton">Modo Diapositivas</span>
                     </button>
                 </div>
                 
@@ -459,7 +459,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
-                            Salir
+                            <span data-translate-key="exitButton">Salir</span>
                         </button>
                     </div>
                     <iframe id="fullscreen-iframe"
@@ -476,10 +476,10 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
                             </svg>
-                            Anterior
+                            <span data-translate-key="prevButton">Anterior</span>
                         </button>
                         <button id="next-slide-btn" class="bg-white text-black px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center gap-2">
-                            Siguiente
+                            <span data-translate-key="nextButton">Siguiente</span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
                             </svg>
@@ -490,12 +490,12 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                             </svg>
-                            Salir
+                            <span data-translate-key="exitButton">Salir</span>
                         </button>
                     </div>
                     <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
                         <div class="bg-black bg-opacity-50 text-white px-4 py-2 rounded-lg">
-                            <span id="slide-counter">Diapositiva 1 de 20</span>
+                            <span id="slide-counter" data-translate-key="slideCounter">Diapositiva 1 de 20</span>
                         </div>
                     </div>
                     <iframe id="slideshow-iframe"
@@ -513,7 +513,7 @@
                             <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                             </svg>
-                            Descargar PDF
+                            <span data-translate-key="downloadButton">Descargar PDF</span>
                         </a>
                     </div>
                 </div>
@@ -607,7 +607,13 @@
                 projectDocumentDesc: 'Descarga y revisa el documento completo del proyecto de inversión estratégica entre Casanare y Japón.',
                 pdfTitle: 'Proyecto de Inversión Estratégica',
                 pdfSubtitle: 'Casanare - Japón: Alianza para el Futuro',
-                downloadButton: 'Descargar PDF'
+                downloadButton: 'Descargar PDF',
+                fullscreenButton: 'Presentación Completa',
+                slideshowButton: 'Modo Diapositivas',
+                exitButton: 'Salir',
+                prevButton: 'Anterior',
+                nextButton: 'Siguiente',
+                slideCounter: 'Diapositiva 1 de 20'
             },
             en: {
                 headerTitle: '<span class="text-[#009444]">Casanare</span> <span class="text-black">&</span> <span class="text-[#DA291C]">Japan</span>',
@@ -691,7 +697,13 @@
                 projectDocumentDesc: 'Download and review the complete project document for the strategic investment partnership between Casanare and Japan.',
                 pdfTitle: 'Strategic Investment Project',
                 pdfSubtitle: 'Casanare - Japan: Alliance for the Future',
-                downloadButton: 'Download PDF'
+                downloadButton: 'Download PDF',
+                fullscreenButton: 'Full Screen',
+                slideshowButton: 'Slideshow',
+                exitButton: 'Exit',
+                prevButton: 'Previous',
+                nextButton: 'Next',
+                slideCounter: 'Slide 1 of 20'
             },
             ja: {
                 headerTitle: '<span class="text-[#009444]">カサナレ</span> <span class="text-black">&</span> <span class="text-[#DA291C]">日本</span>',
@@ -751,7 +763,13 @@
                 projectDocumentDesc: 'カサナレと日本の戦略的投資パートナーシップのための完全なプロジェクトドキュメントをダウンロードして、レビューしてください。',
                 pdfTitle: '戦略的投資プロジェクト',
                 pdfSubtitle: 'カサナレ - 日本：未来への同盟',
-                downloadButton: 'PDFをダウンロード'
+                downloadButton: 'PDFをダウンロード',
+                fullscreenButton: 'フルスクリーン',
+                slideshowButton: 'スライドショー',
+                exitButton: '終了',
+                prevButton: '前へ',
+                nextButton: '次へ',
+                slideCounter: 'スライド1/20'
             }
         };
 
@@ -914,18 +932,30 @@
             changeLanguage('es');
         });
 
-        // --- Funcionalidad de Pantalla Completa para PDF ---
+        // --- Funcionalidad de Pantalla Completa y Modo Diapositivas para PDF ---
         document.addEventListener('DOMContentLoaded', function() {
             const fullscreenBtn = document.getElementById('fullscreen-btn');
             const exitFullscreenBtn = document.getElementById('exit-fullscreen-btn');
             const fullscreenOverlay = document.getElementById('fullscreen-overlay');
+            
+            // Elementos para modo diapositivas
+            const slideshowBtn = document.getElementById('slideshow-btn');
+            const slideshowOverlay = document.getElementById('slideshow-overlay');
+            const exitSlideshowBtn = document.getElementById('exit-slideshow-btn');
+            const prevSlideBtn = document.getElementById('prev-slide-btn');
+            const nextSlideBtn = document.getElementById('next-slide-btn');
+            const slideCounter = document.getElementById('slide-counter');
+            const slideshowIframe = document.getElementById('slideshow-iframe');
+
+            // Variables para el modo diapositivas
+            let currentSlide = 1;
+            const totalSlides = 20; // Ajusta según el número de diapositivas en tu PDF
 
             // Función para entrar en pantalla completa
             function enterFullscreen() {
                 fullscreenOverlay.classList.remove('hidden');
-                document.body.style.overflow = 'hidden'; // Previene scroll del body
+                document.body.style.overflow = 'hidden';
                 
-                // Enfocar el iframe para mejor experiencia
                 setTimeout(() => {
                     const fullscreenIframe = document.getElementById('fullscreen-iframe');
                     if (fullscreenIframe) {
@@ -937,21 +967,88 @@
             // Función para salir de pantalla completa
             function exitFullscreen() {
                 fullscreenOverlay.classList.add('hidden');
-                document.body.style.overflow = ''; // Restaura scroll del body
+                document.body.style.overflow = '';
             }
 
-            // Event listeners
+            // Función para entrar en modo diapositivas
+            function enterSlideshow() {
+                slideshowOverlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+                currentSlide = 1;
+                updateSlideCounter();
+                
+                // Configurar el iframe para modo presentación
+                if (slideshowIframe) {
+                    slideshowIframe.src = `https://drive.google.com/file/d/1IP1GpgBW4wHDwARWbrjbFtrHypLeevu_/preview#page=${currentSlide}`;
+                    slideshowIframe.focus();
+                }
+            }
+
+            // Función para salir del modo diapositivas
+            function exitSlideshow() {
+                slideshowOverlay.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+
+            // Función para ir a la diapositiva anterior
+            function prevSlide() {
+                if (currentSlide > 1) {
+                    currentSlide--;
+                    updateSlideCounter();
+                    if (slideshowIframe) {
+                        slideshowIframe.src = `https://drive.google.com/file/d/1IP1GpgBW4wHDwARWbrjbFtrHypLeevu_/preview#page=${currentSlide}`;
+                    }
+                }
+            }
+
+            // Función para ir a la siguiente diapositiva
+            function nextSlide() {
+                if (currentSlide < totalSlides) {
+                    currentSlide++;
+                    updateSlideCounter();
+                    if (slideshowIframe) {
+                        slideshowIframe.src = `https://drive.google.com/file/d/1IP1GpgBW4wHDwARWbrjbFtrHypLeevu_/preview#page=${currentSlide}`;
+                    }
+                }
+            }
+
+            // Función para actualizar el contador de diapositivas
+            function updateSlideCounter() {
+                if (slideCounter) {
+                    slideCounter.textContent = `Diapositiva ${currentSlide} de ${totalSlides}`;
+                }
+            }
+
+            // Event listeners para pantalla completa
             fullscreenBtn.addEventListener('click', enterFullscreen);
             exitFullscreenBtn.addEventListener('click', exitFullscreen);
 
-            // Salir con ESC
+            // Event listeners para modo diapositivas
+            slideshowBtn.addEventListener('click', enterSlideshow);
+            exitSlideshowBtn.addEventListener('click', exitSlideshow);
+            prevSlideBtn.addEventListener('click', prevSlide);
+            nextSlideBtn.addEventListener('click', nextSlide);
+
+            // Navegación con teclado para modo diapositivas
             document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && !fullscreenOverlay.classList.contains('hidden')) {
-                    exitFullscreen();
+                if (!slideshowOverlay.classList.contains('hidden')) {
+                    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+                        e.preventDefault();
+                        prevSlide();
+                    } else if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
+                        e.preventDefault();
+                        nextSlide();
+                    } else if (e.key === 'Escape') {
+                        exitSlideshow();
+                    }
+                } else if (!fullscreenOverlay.classList.contains('hidden')) {
+                    if (e.key === 'Escape') {
+                        exitFullscreen();
+                    }
                 }
             });
 
-            // Salir haciendo clic fuera del iframe
+            // Salir haciendo clic fuera del iframe (solo para pantalla completa)
             fullscreenOverlay.addEventListener('click', function(e) {
                 if (e.target === fullscreenOverlay) {
                     exitFullscreen();
