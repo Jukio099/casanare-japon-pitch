@@ -7,7 +7,7 @@ Presentación web profesional para convencer a inversores japoneses sobre las op
 - 🌍 **Multilingüe**: Español, Inglés y Japonés
 - 📊 **Gráficos Interactivos**: Visualización de datos energéticos
 - 📱 **Responsive Design**: Optimizado para todos los dispositivos
-- 🎨 **Diseño Profesional**: Colores oficiales de Colombia gy Japón
+- 🎨 **Diseño Profesional**: Colores oficiales de Colombia y Japón
 - ⚡ **Animaciones Suaves**: Efectos de entrada y transiciones
 
 ## 🚀 Cómo Usar
